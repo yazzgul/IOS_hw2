@@ -33,6 +33,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 let vc = storyboard.instantiateViewController(withIdentifier: "TableViewController")
                 self.navigationController?.pushViewController(vc, animated: true)
+                
             }
         }
         if (numText == nil) || (numText?.hasPrefix("8908") == false) || (Password.text != correctPassword) {
